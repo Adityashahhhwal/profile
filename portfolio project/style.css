@@ -231,7 +231,8 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: var(--button-border);
+  color: var(--secondary-color-2);
 }
 
 .btn-color-1:hover,
@@ -239,30 +240,29 @@ section {
   cursor: pointer;
 }
 
-.btn-color-1{
-  background-color: rgb(123, 119, 119);
-}
-
+.btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
+  background: var(--button-background);
+  color: var(--primary-color);
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: var(--secondary-color);
 }
 
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
 .btn-color-2 {
   background: none;
 }
 
+.btn-color-2:hover {
+  border: var(--button-border);
+  background: var(--secondary-color);
+}
 
 .btn-container {
   gap: 1rem;
 }
+
 
 /* ABOUT SECTION */
 
